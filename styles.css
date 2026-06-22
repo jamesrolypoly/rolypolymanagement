@@ -77,8 +77,8 @@ body::before {
 .descriptor {
   margin: clamp(2.3rem, 4.6vw, 3.4rem) 0 0;
   font-family: "Roly Poly Display", Didot, Georgia, serif;
-  font-size: clamp(1.35rem, 2.65vw, 1.95rem);
-  font-weight: 400;
+  font-size: clamp(1.28rem, 2.5vw, 1.82rem);
+  font-weight: 300;
   line-height: 1.2;
   letter-spacing: 0.095em;
   text-align: center;
