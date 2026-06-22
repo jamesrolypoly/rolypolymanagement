@@ -66,7 +66,7 @@ body::before {
 .logo-lockup {
   position: relative;
   display: block;
-  width: min(27rem, 68vw);
+  width: min(21.85rem, 55.2vw);
 }
 
 .logo {
@@ -78,7 +78,7 @@ body::before {
 .descriptor {
   margin: clamp(2.3rem, 4.6vw, 3.4rem) 0 0;
   font-family: "Roly Poly Display", Didot, Georgia, serif;
-  font-size: clamp(1.16rem, 2.25vw, 1.65rem);
+  font-size: clamp(0.94rem, 1.82vw, 1.33rem);
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: 0.045em;
@@ -90,8 +90,8 @@ body::before {
   bottom: max(1.6rem, env(safe-area-inset-bottom));
   left: 50%;
   display: grid;
-  width: 4rem;
-  height: 4rem;
+  width: 3.4rem;
+  height: 3.4rem;
   color: #050505;
   place-items: center;
   transform: translateX(-50%);
@@ -101,8 +101,8 @@ body::before {
 }
 
 .email-link svg {
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 2.25rem;
+  height: 2.25rem;
   overflow: visible;
   fill: none;
   stroke: currentColor;
@@ -195,7 +195,7 @@ body::before {
   }
 
   .logo-lockup {
-    width: min(23rem, 82vw);
+    width: min(18.63rem, 66.25vw);
   }
 
   .descriptor {
