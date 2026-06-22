@@ -28,9 +28,10 @@ body {
   background-color: #929391;
   background-image:
     linear-gradient(rgb(202 203 199 / 58%), rgb(202 203 199 / 58%)),
-    url("assets/industrial-concrete.png");
+    url("assets/industrial-concrete-fine.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
