@@ -72,6 +72,9 @@ body::before {
   display: block;
   width: 100%;
   height: auto;
+  filter:
+    drop-shadow(0 9px 7px rgb(0 0 0 / 25%))
+    drop-shadow(0 19px 25px rgb(0 0 0 / 22%));
 }
 
 .descriptor {
@@ -133,6 +136,61 @@ body::before {
   border: 0;
 }
 
+.custom-cursor,
+.cursor-trail {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body,
+  a {
+    cursor: none;
+  }
+
+  .custom-cursor,
+  .cursor-trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: block;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  .custom-cursor {
+    width: 8px;
+    height: 8px;
+    background: #050505;
+    transition:
+      width 150ms ease,
+      height 150ms ease,
+      opacity 150ms ease;
+  }
+
+  .cursor-trail {
+    z-index: 99;
+    width: 26px;
+    height: 26px;
+    background: rgb(5 5 5 / 18%);
+    filter: blur(8px);
+    transition: opacity 180ms ease;
+    will-change: left, top;
+  }
+
+  .custom-cursor.is-visible,
+  .cursor-trail.is-visible {
+    opacity: 1;
+  }
+
+  .custom-cursor.is-over-link {
+    width: 14px;
+    height: 14px;
+  }
+}
+
 @media (max-width: 36rem) {
   .identity {
     width: 88vw;
@@ -148,6 +206,16 @@ body::before {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  body,
+  a {
+    cursor: auto;
+  }
+
+  .custom-cursor,
+  .cursor-trail {
+    display: none;
+  }
+
   .email-link {
     transition: none;
   }
