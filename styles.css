@@ -81,7 +81,7 @@ body::before {
   max-width: 100%;
   margin: clamp(1.8rem, 3.7vw, 2.75rem) 0 0;
   font-family: "Roly Poly Display", Didot, Georgia, serif;
-  font-size: clamp(0.72rem, 1.35vw, 1rem);
+  font-size: clamp(0.8rem, 1.5vw, 1.1rem);
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: 0.045em;
