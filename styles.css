@@ -23,8 +23,14 @@ body {
   margin: 0;
 }
 
+html {
+  background-color: #929391;
+}
+
 body {
   color: #050505;
+  min-height: 100vh;
+  min-height: 100dvh;
   background-color: #929391;
   background-image:
     linear-gradient(rgb(202 203 199 / 58%), rgb(202 203 199 / 58%)),
@@ -33,7 +39,13 @@ body {
     radial-gradient(circle at 74% 34%, rgb(255 255 255 / 12%) 0 1px, transparent 2px),
     radial-gradient(circle at 44% 72%, rgb(69 70 67 / 12%) 0 1.5px, transparent 3px),
     linear-gradient(135deg, rgb(60 61 58 / 8%), transparent 34%, rgb(255 255 255 / 7%) 72%, transparent);
-  background-position: center;
+  background-position:
+    center,
+    center,
+    0 0,
+    12px 18px,
+    28px 7px,
+    center;
   background-size:
     cover,
     cover,
@@ -48,7 +60,6 @@ body {
     repeat,
     repeat,
     no-repeat;
-  background-attachment: fixed;
 }
 
 body::before {
